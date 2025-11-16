@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Studio</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="FITNESS.css">
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#home">🏋 FITNESS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#trainers">Trainers</a></li>
+        <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
+        <li class="nav-item"><a class="nav-link" href="#register">Register</a></li>
+    </ul>
+    </div>
+  </div>
+</nav>
+
+<header id="home" class="hero text-white text-center d-flex align-items-center justify-content-center">
+  <div class="overlay"></div>
+  <div class="content">
+    <h1 class="fw-bold animate">Achieve Your Dream Body</h1>
+    <p class="lead">Join our professional trainers and start your fitness journey today.</p>
+    <a href="#register" class="btn btn-lg btn-warning shadow">Join Now</a>
+  </div>
+</header>
+
+
+<section id="programs" class="py-5 text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-5">Our Fitness Programs</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card p-3 shadow program">
+          <img src="yoga.jpg" class="rounded mb-3" alt="yoga">
+          <h5 class="fw-bold">Yoga & Meditation</h5>
+          <p>Improve flexibility and reduce stress with guided yoga sessions.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3 shadow program">
+          <img src="training.jpg" class="rounded mb-3" alt="training">
+          <h5 class="fw-bold">Strength Training</h5>
+          <p>Gain power and endurance with customized strength workouts.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3 shadow program">
+          <img src="zumba.jpg" class="rounded mb-3" alt="zumba">
+          <h5 class="fw-bold">Zumba Dance</h5>
+          <p>Burn calories and have fun with high-energy Zumba sessions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="trainers" class="bg-light py-5 text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-5">Meet Our Trainers</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="trainer shadow p-3 rounded">
+          <img src="trainer.jpg" class="rounded-circle mb-3">
+          <h5 class="fw-bold">Jason Tan</h5>
+          <p>Certified Personal Trainer & Nutritionist</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="trainer shadow p-3 rounded">
+          <img src="instructor.jpg" class="rounded-circle mb-3">
+          <h5 class="fw-bold">Sarah Lim</h5>
+          <p>Yoga Instructor & Wellness Coach</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="trainer shadow p-3 rounded">
+          <img src="zumbas.jpg" class="rounded-circle mb-3">
+          <h5 class="fw-bold">Alex Wong</h5>
+          <p>Zumba & Group Fitness Trainer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<table class="table table-striped table-hover">
+  <section id="schedule" class="py-5 bg-light">
+  <div class="container text-center">
+  <h2 class="mb-4">Weekly Workout Schedule</h2>
+  <thead>
+    <tr><th>Day</th><th>Program</th><th>Time</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Monday</td><td>Yoga</td><td>7:00 AM - 8:00 AM</td></tr>
+    <tr><td>Tuesday</td><td>Strength Training</td><td>6:00 PM - 7:00 PM</td></tr>
+    <tr><td>Wednesday</td><td>Zumba</td><td>5:00 PM - 6:00 PM</td></tr>
+  </tbody>
+  </div>
+ </section>
+</table>
+
+
+<section id="register" class="py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Register Now</h2>
+    <form id="regForm" class="col-md-6 mx-auto p-4 shadow rounded bg-white">
+      <div class="mb-3"><input type="text" id="name" class="form-control" placeholder="Your Name" required></div>
+      <div class="mb-3"><input type="email" id="email" class="form-control" placeholder="Your Email" required></div>
+      <div class="mb-3">
+        <select id="program" class="form-select" required>
+          <option value="">Select Program</option>
+          <option>Yoga</option>
+          <option>Zumba</option>
+          <option>Strength Training</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-warning w-100">Submit</button>
+    </form>
+  </div>
+</section>
+
+
+<section id="contact" class="bg-dark text-white py-5 text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-4">Contact Us</h2>
+    <p>Email: fitnessstudio@example.com | Phone: +60 12-345-6789</p>
+    <p>Follow us on Instagram • Facebook • TikTok</p>
+  </div>
+</section>
+
+
+<footer class="text-center text-white py-3 bg-secondary">
+  <p class="mb-0">&copy; 2025 FITNESS. All rights reserved.</p>
+</footer>
+
+
+<div class="modal fade" id="successModal" tabindex="-1">
+  <div class="modal-dialog"><div class="modal-content text-center p-3">
+    <h5 class="fw-bold mb-2">🎉 Registration Successful!</h5>
+    <p>Thank you for joining FITNESS. We’ll contact you soon.</p>
+  </div></div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="FITNESS.js"></script>
+</body>
+</html>

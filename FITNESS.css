@@ -1,0 +1,69 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background: rgba(0,0,0,0.8);
+}
+
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1554284126-aa88f22d8b74') center/cover no-repeat;
+  height: 100vh;
+  position: relative;
+}
+.hero .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+.hero .content {
+  position: relative;
+  z-index: 1;
+}
+.hero .animate {
+  animation: fadeInUp 1.8s ease-in-out;
+}
+
+
+.trainer img {
+  width: 150px;        
+  height: 150px;    
+  object-fit: cover; 
+  border-radius: 50%;   
+  border: 3px solid #fff; 
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+#schedule h2 {
+	font-weight: 700;
+	color: #222;
+}
+
+.table {
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.table thead th {
+	background-color: #222;
+	color: white;
+	text-transform: uppercase;
+}
+
+
+#regForm {
+  background: #fff;
+  border-radius: 10px;
+}
+.btn-warning {
+  font-weight: 600;
+}
+
+
+@keyframes fadeInUp {
+  from {opacity: 0; transform: translateY(30px);}
+  to {opacity: 1; transform: translateY(0);}
+}
